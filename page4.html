@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The First Obstacle</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #submitButton{
+            color: white;
+            background-color:red;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <h1>The First Obstacle</h1>
+        <p>
+            As you venture deeper into the Dark Forest, 
+            you encounter a mystical guardian. 
+            The guardian blocks your path and poses a riddle:
+        </p>
+        <blockquote>
+            "I speak without a mouth and hear without ears. 
+            I have no body, but I come alive with wind. 
+            What am I?”
+        </blockquote>
+        <form id="firstform" type="get" action="page5.html">
+            <label>Your Answer:</label>
+            <input id="ans1" name="echo">
+            <input type="submit" id="submitButton" value="Submit Answer">
+            <div id="output"></div>
+        </form>
+    </section>
+    <script>
+        const correct = "e";
+        const input = "";
+
+        const output = document.getElementById("output");//for testing
+
+        const ans = document.getElementById("ans1");
+        ans.addEventListener("keyup", (event) =>{
+            input.concat(event.key);
+
+            if(input === correct){
+                document.getElementById("submitButton").style.background = 'green';
+            } else {
+                document.getElementById("submitButton").style.background = 'red';
+            }
+            output.textContent = `You Pressed ${input}`;//for testing
+        });
+
+    </script>
+</body>
+</html>
