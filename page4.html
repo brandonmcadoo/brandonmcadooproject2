@@ -33,21 +33,25 @@
         </form>
     </section>
     <script>
-        const correct = "ehco";
-        const input = "";
+        const correct = "echo";
+        // * Use `let` here instead :) Since we are modifying it's value.
+        // * Consider giving it a more descriptive name.
+        let input = ""; 
 
-        const output = document.getElementById("output");//for testing
-
+        // * Do not need this
         const ans = document.getElementById("ans1");
+        
         ans.addEventListener("keyup", (event) =>{
-            input.concat(event.key);
-
-            if(input === correct){
+            
+            // * Consider this much better approach intead. :-)
+            const userInput = document.getElementById("ans1").value;
+            // * -- end 
+            if(userInput === correct){
                 document.getElementById("submitButton").style.background = 'green';
-            } else {
+            }
+            else {
                 document.getElementById("submitButton").style.background = 'red';
             }
-            output.textContent = `You Pressed ${input}`;//for testing
         });
 
     </script>
