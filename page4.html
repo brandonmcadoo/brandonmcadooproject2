@@ -34,14 +34,19 @@
     </section>
     <script>
         const correct = "e";
-        const input = "";
+        // * Use `let` here instead :) Since we are modifying it's value.
+        // * Consider giving it a more descriptive name.
+        let input = ""; 
 
         const output = document.getElementById("output");//for testing
-
-        const ans = document.getElementById("ans1");
+        // * Do not need this
+        //const ans = document.getElementById("ans1");
+        
         ans.addEventListener("keyup", (event) =>{
-            input.concat(event.key);
-
+            input = input.concat(event.key);
+            // * Consider this much better approach intead. :-)
+            const userInput = document.getElementById("ans1").value;
+            // * -- end 
             if(input === correct){
                 document.getElementById("submitButton").style.background = 'green';
             } else {
