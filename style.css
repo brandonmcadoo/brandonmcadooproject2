@@ -80,3 +80,9 @@ button:hover {
     border-radius: 5px;
     border: 1px solid #ccc;
 }
+.level2{
+    margin:15px;
+}
+.level3{
+    margin:10px
+}

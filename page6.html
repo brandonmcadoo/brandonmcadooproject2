@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Final Showdown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <h1>The Final Showdown</h1>
+        <p>After a long journey filled with trials and challenges, you finally stand before Malakar's lair. The dark sorcerer awaits, the Crystal of Wisdom in his grasp. It's time to make your move.</p>
+        <!-- Your Code -->
+        
+
+        <form id="fourthForm" type="get" action="page7.html">
+            <fieldset class="level2">
+                <legend>How will you confront Malakar?</legend>
+                Choose wisely:
+                <select id="pathChoice" name="pathChoice" required>
+                    <option id="none" value="">--Please choose an option--</option>
+                    <option id="strength" value="option1">Strength</option>
+                    <option id="wisdom" value="option2">Wisdom</option>
+                    <option id="stealth" value="option3">Stealth</option>
+                </select>
+            </fieldset>
+            <fieldset class="level2">
+                <legend>Character Information</legend>
+                <fieldset class="level3">
+                    <legend>The Brave</legend>
+                    <label for="nameBox">Your Name:</label>
+                    <input type="text" id="textBox" name="textBox" style="width: 30%;">
+                </fieldset>
+                <fieldset class="level3">
+                    <legend>Select Your Weapon:</legend>
+                    <input type="radio" id="radioBtn1" name="radioBtn1">
+                    <label for="radioBtn1">Sword</label>
+                    <input type="radio" id="radioBtn2" name="radioBtn2">
+                    <label for="radioBtn2">Bow</label>
+                    <input type="radio" id="radioBtn3" name="radioBtn3">
+                    <label for="radioBtn3">Staff</label>
+                </fieldset>
+                <fieldset class="level3">
+                    <legend>Select Your Weapon:</legend>
+                    <input type="checkbox" id="checkBox1" name="checkBox1">
+                    <label for="checkBox1">Plate Armor</label>
+                    <input type="checkbox" id="checkBox2" name="checkBox2">
+                    <label for="checkBox2">Leather Armor</label>
+                    <input type="checkbox" id="checkBox3" name="checkBox3">
+                    <label for="checkBox3">Cloak</label>
+                </fieldset>
+                <label for="messageBox">Leave A Message For Malakar</label><br>
+                <input type="text" id="messageBox" name="messageBox" style="width: 80%; height: 50px">
+            </fieldset>
+            <input type="submit" value="Continue">
+        </form>
+
+
+        <p>Your choice here will determine the fate of the kingdom. Choose wisely.</p>
+    </section>
+</body>
+<!-- I want to thank my cat -->
+</html>
+
